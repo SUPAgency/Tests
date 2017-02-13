@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	#div-container div {
+		width: 500px;
+		background-color: #000;
+	}
+	#div-container {
+	    height: 500px;
+	    width: 1000px;
+	    margin: 50px;
+	    padding: 10px;
+	    border: 1px solid black;
+	    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+	    perspective: 150px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	#div-prev {
+		height: 315px;
+	    border: 1px solid black;
+	    -webkit-transform: rotateY(-10deg); /* Chrome, Safari, Opera  */
+	    transform: rotateY(-10deg);
+	}
+	#div-middle {
+		height: 400px;
+	}
+	#div-next {
+		height: 315px;
+	    border: 1px solid black;
+	    -webkit-transform: rotateY(10deg); /* Chrome, Safari, Opera  */
+	    transform: rotateY(10deg);
+	}
+</style>
+<body>
+	<div id="div-container">
+	  <div id="div-prev"></div>
+	  <div id="div-middle"></div>
+	  <div id="div-next"></div>
+	</div>
+</body>
+</html>
